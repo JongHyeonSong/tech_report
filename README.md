@@ -1,3 +1,11 @@
+<div>
+<img src="https://user-images.githubusercontent.com/59993079/83984279-4e661b80-a96f-11ea-9b0f-1ec829fe85cb.jpg">
+<img src="https://user-images.githubusercontent.com/59993079/83984286-558d2980-a96f-11ea-90f5-9332dd8d5cb5.jpg">
+<img src="https://user-images.githubusercontent.com/59993079/83984291-5d4cce00-a96f-11ea-9ae8-1205f62aa0a3.jpg">
+<img src="https://user-images.githubusercontent.com/59993079/83984292-6178eb80-a96f-11ea-8a10-7caabd9abf7e.jpg">
+</div
+
+------------------
 # 프로젝트 담당업무
 * Cross-Platform인 Kivy를 활용한 UI/UX 설계 및 구현
 * 로봇에서 전송되는 정보를 활용한 빅데이터 시각화 설계 및 구현
