@@ -1,3 +1,7 @@
+# 프로젝트명 : 우리아이 지킴이
+* ### 목표  코로나 블루 대처를 위한 스마트 로봇 및 어플 개발
+
+
 <div>
 <img src="https://user-images.githubusercontent.com/59993079/83984279-4e661b80-a96f-11ea-9b0f-1ec829fe85cb.jpg">
 <img src="https://user-images.githubusercontent.com/59993079/83984286-558d2980-a96f-11ea-90f5-9332dd8d5cb5.jpg">
