@@ -28,8 +28,10 @@
 * Kivy에는 자주쓰는 BoxLayout, GridLayout, FloatLayout등을 포함해 8개정도의 레이아웃을 가지고 있는데 각각 조금씩의 차이는 있지만 결국은 버튼이나 라벨등을 넣기위한 공간이라고 생각하면 됩니다.  
   그리고 이 레이아웃들은 공간을 특정한 크기가 아니라 비율로 나타내게 되는데 이것으로 인해 위에서 언급한 Kivy의 Flexible한 특성을 살려 여러Android기계에 쉽게 호환됩니다  
   
-* Widget는 Kivy의 GUI 인터페이스의 기본 빌딩 블록으로써 Canvas화면에 그리는 데 사용할 수 있는 툴을 제공받았습니다. 이벤트를 수신하고 이에 동적으로 반응 하는데, 이때 다른 GUI 프로그램과 다르게 위치와 크기를 비율로 설정할 수 있어 어떤 장치에서든지 쉽게 호환되는 점이 마음에 들었습니다. 
-<div><img src="https://user-images.githubusercontent.com/59993079/83984691-5626bf80-a971-11ea-8742-589022ae09ba.png"></div> 
+* Widget는 Kivy의 GUI 인터페이스의 기본 빌딩 블록으로써 Canvas화면에 그리는 데 사용할 수 있는 툴을 제공받았습니다. 이벤트를 수신하고 이에 동적으로 반응 하는데, 이때 다른 GUI 프로그램과 다르게 위치와 크기를 비율로 설정할 수 있어 어떤 장치에서든지 쉽게 호환되는 점이 마음에 들었습니다.   
+
+<div><img src="https://user-images.githubusercontent.com/59993079/83984691-5626bf80-a971-11ea-8742-589022ae09ba.png"></div>  
+
 * 여기서 widget의 크기가 0.5라고 되어있고, 이 말은 즉 부모 layer의 세로축 길이의 50%를 차지한다는 것이고 이는 widget의 크기를 static하지않고 dynamic하게 만들어 줬습니다.
 * 응용 프로그램이 점점 복잡 해짐에 따라 widget 트리 구성과 Binding의 명시적인 선언이 상세하고 유지 관리가 어려운 것이 일반적인데 비해 kivy는 kv라는 자기만의 language를 제공해줍니다. 여기서 kivy는 각 widget마다 id를 지정하여 kv밖 python 파일에서 해당하는 widget을 컨트롤 할 수 있었고, 버튼 Call-Back 함수로 kv파일 외부에서도 kv파일을 컨트롤 할수 있었습니다
 * 프로젝트 진행중 파일을 모듈화하던중에 파일을 분리하자 보통 root경로를 이용하여 python파일에서 작업하게 되는데 모듈이 떨어져 있으니 root경로가 원하는 경로로 설정되지 않았습니다. 처음에 내부클래스를 중첩으로 쌓아서 원하는 widget에 접근하려고했으나 실패했고, 그냥 단순하게 상위,하위 widget에 접근하고해야겠다는 생각이 들어 documentation을 보았고 kivy위젯의 parent, children 속성을 발견하고, 이용해 다시 id에 접근할수있었습니다
